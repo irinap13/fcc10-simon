@@ -1,0 +1,128 @@
+.game-container
+  width: 400px
+  height: 400px
+  display: block
+  margin: 50px auto
+  padding: 0 15px
+  border: 15px solid #666
+  border-radius: 100%
+  text-align: center
+  position: relative
+  
+  .color-block
+    background-color: #eee
+    display: inline-block
+    width: 187px
+    height: 187px
+    margin: -1px
+    &#c1
+      border-top-left-radius: 100%
+      background-color: rgba(green,.9)
+      border-right: 5px solid #666
+      border-bottom: 5px solid #666
+      
+    &#c2
+      border-top-right-radius: 100%
+      background-color: rgba(red,.9)
+      border-left: 5px solid #666
+      border-bottom: 5px solid #666
+      
+    &#c3
+      border-bottom-left-radius: 100%
+      background-color: rgba(yellow,.9)
+      border-right: 5px solid #666
+      border-top: 5px solid #666
+      
+    &#c4
+      border-bottom-right-radius: 100%
+      background-color: rgba(blue,.9)
+      border-left: 5px solid #666
+      border-top: 5px solid #666
+      
+    &.highlight
+      &#c1
+        background-color: rgba(green,.6)
+      &#c2
+        background-color: rgba(red,.6)
+      &#c3
+        background-color: rgba(yellow,.4)
+      &#c4
+        background-color: rgba(blue,.6)
+
+  .game-controls
+    width: 220px
+    height: 220px
+    background-color: #fff
+    position: absolute
+    top: 75px
+    left: 75px
+    border-radius: 50%
+    border: 5px solid #666
+    padding: 20px
+    cursor: pointer
+    
+    .col-xs-4
+      padding: 0 10px
+      
+      &.btn-disabled
+        .btn
+          border-color: #eee
+          &:active, &:hover, &:focus
+            background-color: transparent
+            box-shadow: none
+        h4
+          background-color: #666
+          color: #fff
+          text-shadow: none
+        h5
+          color: #999
+    
+    h4
+      width: 100%
+      height: 30px
+      line-height: 30px
+      margin: 0
+      background-color: #000
+      border-radius: 5px
+      color: red
+      text-shadow: 0 0 3px rgba(red,.6)
+      text-align: center
+      
+    .btn
+      &.btn-default
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        &#btn-onoff
+          border: none
+          background: transparent
+          width: 50px
+          color: #000
+          height: 35px
+          line-height: 20px
+          padding: 0
+          margin-top: 15px
+          span
+            color: red
+            font-size: 2em
+            position: relative
+            top: 5px
+          &:active, &:focus
+            box-shadow: none
+          h5
+            display: inline-block
+            width: 20px
+            text-align: left
+            
+      &.btn-primary
+        background-color: rgba(red,.4)
+        border-color: rgba(red,.8)
+        color: #000
+        &#btn-onoff
+          span
+            color: green
+      &:focus
+        outline: none
+      
+audio
+  display: none

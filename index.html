@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FreeCodeCamp #10</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css' rel='stylesheet' type='text/css'>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<link href='style.min.css' rel='stylesheet' type='text/css'>
+	<script src='script.min.js'></script>
+</head>
+<body>
+<div class="container">
+  <div class="game-container">
+    <div class="row">
+      <div class="col-xs-6 color-block todisable btn-disabled" id="c1"></div>
+      <div class="col-xs-6 color-block todisable btn-disabled" id="c2"></div>
+    </div> <div class="row">
+      <div class="col-xs-6 color-block todisable btn-disabled" id="c3"></div>
+      <div class="col-xs-6 color-block todisable btn-disabled" id="c4"></div>
+    </div>
+    <div class="game-controls">
+      <h3>Simon</h3>
+      <div class="row">
+        <div class="col-xs-4 todisable btn-disabled"><h4 id="count_text">--</h4><h5>COUNT</h5></div>
+        <div class="col-xs-4 todisable btn-disabled"><button class="btn btn-default" id="btn-start"><span></span></button><br/><h5>START</h5></div>
+        <div class="col-xs-4 todisable btn-disabled"><button class="btn btn-default" id="btn-strict"><span></span></button><br/><h5>STRICT</h5></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"><button class="btn btn-default" id="btn-onoff"><span>&bull;</span> <h5>OFF</h5></button></div>
+      </div>
+    </div>
+  </div>
+  <audio id="audio1">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  </audio>
+  <audio id="audio2">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  </audio>
+  <audio id="audio3">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  </audio>
+  <audio id="audio4">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
+</div> 
+</body>
+</html>
